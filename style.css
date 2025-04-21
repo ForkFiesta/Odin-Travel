@@ -1,0 +1,187 @@
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e67e22;
+    --text-color: #333;
+    --light-text: #f8f9fa;
+    --background-light: #ffffff;
+    --background-dark: #f8f9fa;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+html, body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-unit);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Home Page Styles */
+.home-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(./public/texas-flag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-container h1 {
+    color: var(--light-text);
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+.home-container h2 {
+    color: var(--light-text);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-container ul {
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.home-container ul li {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.home-container a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--light-text);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.home-container a:hover {
+    background-color: var(--light-text);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Destination Pages */
+body > header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Content Container */
+body > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-container h2 {
+        font-size: 2rem;
+    }
+    
+    .home-container a {
+        font-size: 1.2rem;
+    }
+    
+    img {
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+
+
